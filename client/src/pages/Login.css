@@ -1,0 +1,14 @@
+.login-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .login-form {
+    flex: 1;
+    margin-right: 50px;
+  }
+  
+  .image-container {
+    flex: 1;
+  }
