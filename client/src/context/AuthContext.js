@@ -76,7 +76,7 @@ export const AuthContextProvider = ({ children }) => {
   // register request.
   const registerUser = async (userData) => {
     try {
-      const res = await fetch(`https://missionpossible-production.up.railway.app/register`, {
+      const res = await fetch(`https://missionpossible-production.up.railway.app/api/register`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
