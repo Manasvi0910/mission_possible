@@ -24,7 +24,7 @@ const CreateContact = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    const res = await fetch(`https://mission-possible.onrender.com/api/contact`, {
+    const res = await fetch(`https://missionpossible-production.up.railway.app/api/contact`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

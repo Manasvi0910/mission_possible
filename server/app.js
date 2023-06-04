@@ -8,7 +8,7 @@ const auth = require("./middlewares/auth");
 const app = express();
 
 const corsOptions = {
-    origin: "https://contactify.onrender.com", // frontend URI (ReactJS)
+    origin: "https://mission-possible.vercel.app", // frontend URI (ReactJS)
 }
 //middlewares
 app.use(express.json());

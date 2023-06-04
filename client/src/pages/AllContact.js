@@ -17,7 +17,7 @@ const AllContact = () => {
     setLoading(true);
   
     const fetchData = async () => {
-      fetch(`https://mission-possible.onrender.com/api/mycontacts`, {
+      fetch(`https://missionpossible-production.up.railway.app/api/mycontacts`, {
         method: "GET",
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -45,7 +45,7 @@ const AllContact = () => {
   const deleteContact = async (id) => {
     if (window.confirm("are you sure you want to delete this contact ?")) {
       try {
-        const res = await fetch(`https://mission-possible.onrender.com/api/delete/${id}`, {
+        const res = await fetch(`https://missionpossible-production.up.railway.app/api/delete/${id}`, {
           method: "DELETE",
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,

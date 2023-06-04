@@ -21,7 +21,7 @@ export const AuthContextProvider = ({ children }) => {
   // check if the user is logged in.
   const checkUserLoggedIn = async () => {
     try {
-      const res = await fetch(`https://mission-possible.onrender.com/api/me`, {
+      const res = await fetch(`https://missionpossible-production.up.railway.app/api/me`, {
         method: "GET",
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -51,7 +51,7 @@ export const AuthContextProvider = ({ children }) => {
   // login request.
   const loginUser = async (userData) => {
     try {
-      const res = await fetch(`https://mission-possible.onrender.com/api/login`, {
+      const res = await fetch(`https://missionpossible-production.up.railway.app/api/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -76,7 +76,7 @@ export const AuthContextProvider = ({ children }) => {
   // register request.
   const registerUser = async (userData) => {
     try {
-      const res = await fetch(`https://mission-possible.onrender.com/register`, {
+      const res = await fetch(`https://missionpossible-production.up.railway.app/register`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

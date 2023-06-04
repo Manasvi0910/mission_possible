@@ -28,7 +28,7 @@ const EditContact = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    const res = await fetch(`https://mission-possible.onrender.com/api/contact`, {
+    const res = await fetch(`https://missionpossible-production.up.railway.app/api/contact`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -52,7 +52,7 @@ const EditContact = () => {
   
     const fetchData = async () => {
       try {
-        const res = await fetch(`https://mission-possible.onrender.com/api/contact/${id}`, {
+        const res = await fetch(`https://missionpossible-production.up.railway.app/api/contact/${id}`, {
           method: "GET",
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
