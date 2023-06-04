@@ -13,7 +13,7 @@ const corsOptions = {
 //middlewares
 app.use(express.json());
 app.use(morgan("tiny"));
-app.use(require("cors")());
+app.use(cors(corsOptions));
 //routes
 app.get("/protected", auth, (req,res) => {
     return res.status(200).json({...req.user._doc});
